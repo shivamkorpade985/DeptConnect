@@ -1,0 +1,106 @@
+/* ============================================================
+   DeptConnect — Custom Styles
+   ============================================================ */
+
+/* ---------- Font ---------- */
+.font-inter {
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+
+/* ---------- Smooth scrolling ---------- */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ---------- Line clamp ---------- */
+.line-clamp-1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* ---------- Modal animation ---------- */
+@keyframes modalIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95) translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.animate-modal-in {
+    animation: modalIn 0.25s ease-out;
+}
+
+/* ---------- Custom scrollbar ---------- */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* ---------- Focus ring improvement ---------- */
+*:focus-visible {
+    outline: 2px solid #6366f1;
+    outline-offset: 2px;
+    border-radius: 8px;
+}
+
+/* ---------- Skeleton loader ---------- */
+@keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+
+.skeleton {
+    background: linear-gradient(90deg, #f1f5f9 25%, #e2e8f0 50%, #f1f5f9 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: 8px;
+}
+
+/* ---------- Transition helpers ---------- */
+.transition-all {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 200ms;
+}
+
+/* ---------- Selection ---------- */
+::selection {
+    background-color: #c7d2fe;
+    color: #312e81;
+}
+
+/* ---------- Hide scrollbar on tab bar (mobile) ---------- */
+#tab-bar::-webkit-scrollbar {
+    display: none;
+}
+
+#tab-bar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}

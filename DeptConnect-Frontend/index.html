@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DeptConnect — A modern platform for seamless departmental management. Announcements, documents, and leave requests, all in one place.">
+    <title>DeptConnect — Department Management Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-white text-slate-800 font-inter antialiased">
+
+    <!-- Toast Container -->
+    <div id="toast-container" class="fixed top-4 right-4 z-[100] flex flex-col gap-2"></div>
+
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-lg bg-indigo-600 flex items-center justify-center text-white font-bold text-sm shadow-lg shadow-indigo-200">DC</div>
+                <span class="text-lg font-bold text-slate-800">DeptConnect</span>
+            </div>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#features" class="text-sm font-medium text-slate-500 hover:text-indigo-600 transition-colors">Features</a>
+                <a href="#how-it-works" class="text-sm font-medium text-slate-500 hover:text-indigo-600 transition-colors">How It Works</a>
+                <a href="#roles" class="text-sm font-medium text-slate-500 hover:text-indigo-600 transition-colors">Roles</a>
+            </div>
+            <div class="flex items-center gap-3">
+                <a href="login.html" class="px-4 py-2 text-sm font-medium text-slate-600 hover:text-indigo-600 transition-colors">Login</a>
+                <a href="signup.html" class="px-5 py-2.5 bg-indigo-600 text-white text-sm font-medium rounded-xl hover:bg-indigo-700 transition-colors shadow-sm shadow-indigo-200">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="pt-32 pb-20 px-4 overflow-hidden">
+        <div class="max-w-7xl mx-auto text-center">
+            <!-- Badge -->
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-50 border border-indigo-100 mb-8">
+                <div class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></div>
+                <span class="text-xs font-semibold text-indigo-600 tracking-wide uppercase">Now Available for Your Department</span>
+            </div>
+
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight tracking-tight max-w-4xl mx-auto">
+                Streamline Your
+                <span class="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent"> Department</span>
+                <br>Management
+            </h1>
+
+            <p class="mt-6 text-lg sm:text-xl text-slate-500 max-w-2xl mx-auto leading-relaxed">
+                Announcements, document sharing, and leave management — all unified in one modern, intuitive platform built for college departments.
+            </p>
+
+            <div class="mt-10 flex items-center justify-center gap-4 flex-wrap">
+                <a href="signup.html" class="inline-flex items-center gap-2 px-8 py-3.5 bg-indigo-600 text-white text-sm font-semibold rounded-2xl hover:bg-indigo-700 transition-all shadow-lg shadow-indigo-200 hover:shadow-xl hover:shadow-indigo-300 hover:-translate-y-0.5">
+                    Get Started Free
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+                </a>
+                <a href="login.html" class="inline-flex items-center gap-2 px-8 py-3.5 bg-white text-slate-700 text-sm font-semibold rounded-2xl border border-slate-200 hover:bg-slate-50 transition-all hover:-translate-y-0.5">
+                    Sign In
+                </a>
+            </div>
+
+            <!-- Stats -->
+            <div class="mt-20 grid grid-cols-3 gap-8 max-w-xl mx-auto">
+                <div>
+                    <p class="text-3xl font-extrabold text-slate-900">500+</p>
+                    <p class="text-sm text-slate-400 mt-1">Active Users</p>
+                </div>
+                <div>
+                    <p class="text-3xl font-extrabold text-slate-900">1.2K</p>
+                    <p class="text-sm text-slate-400 mt-1">Documents Shared</p>
+                </div>
+                <div>
+                    <p class="text-3xl font-extrabold text-slate-900">98%</p>
+                    <p class="text-sm text-slate-400 mt-1">Satisfaction Rate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FEATURES ==================== -->
+    <section id="features" class="py-20 px-4 bg-slate-50/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="inline-flex items-center px-3 py-1 rounded-full bg-indigo-50 text-xs font-semibold text-indigo-600 uppercase tracking-wider mb-4">Features</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Everything your department needs</h2>
+                <p class="mt-4 text-lg text-slate-500 max-w-2xl mx-auto">Three powerful modules designed to digitize and simplify everyday departmental workflows.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-100 hover:shadow-xl hover:shadow-indigo-100/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-2xl bg-indigo-100 flex items-center justify-center mb-6 group-hover:bg-indigo-600 transition-colors">
+                        <svg class="w-7 h-7 text-indigo-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Announcements</h3>
+                    <p class="text-slate-500 leading-relaxed">Post role-targeted announcements. Students, faculty, and HODs see only what's relevant to them. Real-time updates with clean, card-based layouts.</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-100 hover:shadow-xl hover:shadow-emerald-100/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-2xl bg-emerald-100 flex items-center justify-center mb-6 group-hover:bg-emerald-600 transition-colors">
+                        <svg class="w-7 h-7 text-emerald-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Document Repository</h3>
+                    <p class="text-slate-500 leading-relaxed">Upload, organise, and share syllabi, notes, assignments, circulars, and forms. Cloud-powered storage with one-click downloads.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-100 hover:shadow-xl hover:shadow-purple-100/50 transition-all duration-300 hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-100 flex items-center justify-center mb-6 group-hover:bg-purple-600 transition-colors">
+                        <svg class="w-7 h-7 text-purple-600 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Leave Management</h3>
+                    <p class="text-slate-500 leading-relaxed">Students apply to their class teacher, faculty apply to the HOD. Automatic approver assignment, real-time status tracking, and one-click approvals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== HOW IT WORKS ==================== -->
+    <section id="how-it-works" class="py-20 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="inline-flex items-center px-3 py-1 rounded-full bg-emerald-50 text-xs font-semibold text-emerald-600 uppercase tracking-wider mb-4">How It Works</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Get started in minutes</h2>
+                <p class="mt-4 text-lg text-slate-500 max-w-2xl mx-auto">Simple onboarding, powerful results.</p>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 rounded-2xl bg-indigo-600 text-white flex items-center justify-center text-2xl font-bold mx-auto mb-4 shadow-lg shadow-indigo-200">1</div>
+                    <h4 class="font-bold text-slate-800 mb-2">Sign Up</h4>
+                    <p class="text-sm text-slate-500">Create your account with your name, email, and role. Students select their class teacher.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 rounded-2xl bg-indigo-600 text-white flex items-center justify-center text-2xl font-bold mx-auto mb-4 shadow-lg shadow-indigo-200">2</div>
+                    <h4 class="font-bold text-slate-800 mb-2">Login</h4>
+                    <p class="text-sm text-slate-500">Sign in with your credentials. Your JWT token secures all subsequent interactions.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 rounded-2xl bg-indigo-600 text-white flex items-center justify-center text-2xl font-bold mx-auto mb-4 shadow-lg shadow-indigo-200">3</div>
+                    <h4 class="font-bold text-slate-800 mb-2">Explore Dashboard</h4>
+                    <p class="text-sm text-slate-500">View your personalised dashboard with announcements, documents, and leave request summaries.</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 rounded-2xl bg-indigo-600 text-white flex items-center justify-center text-2xl font-bold mx-auto mb-4 shadow-lg shadow-indigo-200">4</div>
+                    <h4 class="font-bold text-slate-800 mb-2">Take Action</h4>
+                    <p class="text-sm text-slate-500">Post announcements, upload documents, apply for leave, or approve pending requests.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ROLES ==================== -->
+    <section id="roles" class="py-20 px-4 bg-slate-50/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="inline-flex items-center px-3 py-1 rounded-full bg-purple-50 text-xs font-semibold text-purple-600 uppercase tracking-wider mb-4">Roles</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900">Built for every role</h2>
+                <p class="mt-4 text-lg text-slate-500 max-w-2xl mx-auto">Each user type gets tailored permissions and a customised experience.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Student -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-100 hover:shadow-lg transition-all">
+                    <div class="inline-flex items-center px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-sm font-semibold mb-4">🎓 Student</div>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li class="flex items-start gap-2"><span class="text-emerald-500 mt-0.5">✓</span> View targeted announcements</li>
+                        <li class="flex items-start gap-2"><span class="text-emerald-500 mt-0.5">✓</span> Download shared documents</li>
+                        <li class="flex items-start gap-2"><span class="text-emerald-500 mt-0.5">✓</span> Apply for leave (approved by class teacher)</li>
+                        <li class="flex items-start gap-2"><span class="text-emerald-500 mt-0.5">✓</span> Track leave request status</li>
+                    </ul>
+                </div>
+                <!-- Faculty -->
+                <div class="bg-white rounded-2xl p-8 border border-indigo-200 shadow-lg shadow-indigo-100/30 hover:shadow-xl transition-all relative">
+                    <div class="absolute -top-3 right-4 inline-flex items-center px-3 py-1 rounded-full bg-indigo-600 text-white text-xs font-semibold">Most Popular</div>
+                    <div class="inline-flex items-center px-3 py-1 rounded-full bg-purple-100 text-purple-700 text-sm font-semibold mb-4">👨‍🏫 Faculty</div>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li class="flex items-start gap-2"><span class="text-emerald-500 mt-0.5">✓</span> Create & manage announcements</li>
+                        <li class="flex items-start gap-2"><span class="text-emerald-500 mt-0.5">✓</span> Upload & edit documents</li>
+                        <li class="flex items-start gap-2"><span class="text-emerald-500 mt-0.5">✓</span> Approve / reject student leaves</li>
+                        <li class="flex items-start gap-2"><span class="text-emerald-500 mt-0.5">✓</span> Apply for own leave (approved by HOD)</li>
+                    </ul>
+                </div>
+                <!-- HOD -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-100 hover:shadow-lg transition-all">
+                    <div class="inline-flex items-center px-3 py-1 rounded-full bg-amber-100 text-amber-700 text-sm font-semibold mb-4">🏆 HOD</div>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li class="flex items-start gap-2"><span class="text-emerald-500 mt-0.5">✓</span> Full control over all content</li>
+                        <li class="flex items-start gap-2"><span class="text-emerald-500 mt-0.5">✓</span> Edit / delete any announcement or document</li>
+                        <li class="flex items-start gap-2"><span class="text-emerald-500 mt-0.5">✓</span> Approve faculty leave requests</li>
+                        <li class="flex items-start gap-2"><span class="text-emerald-500 mt-0.5">✓</span> Department-wide visibility</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CTA ==================== -->
+    <section class="py-20 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <div class="bg-gradient-to-br from-indigo-600 to-purple-700 rounded-3xl p-12 sm:p-16 text-white relative overflow-hidden">
+                <!-- Decorative blobs -->
+                <div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+                <div class="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2"></div>
+
+                <h2 class="text-3xl sm:text-4xl font-extrabold mb-4 relative">Ready to transform your department?</h2>
+                <p class="text-lg text-indigo-100 mb-8 max-w-xl mx-auto relative">Join hundreds of institutions already using DeptConnect to simplify their workflows.</p>
+                <div class="flex items-center justify-center gap-4 flex-wrap relative">
+                    <a href="signup.html" class="inline-flex items-center gap-2 px-8 py-3.5 bg-white text-indigo-700 text-sm font-bold rounded-2xl hover:bg-indigo-50 transition-all shadow-lg hover:-translate-y-0.5">
+                        Create Free Account
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+                    </a>
+                    <a href="login.html" class="inline-flex items-center gap-2 px-8 py-3.5 bg-white/10 text-white text-sm font-bold rounded-2xl border border-white/20 hover:bg-white/20 transition-all hover:-translate-y-0.5">
+                        Sign In
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="border-t border-slate-100 py-12 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center text-white font-bold text-xs">DC</div>
+                    <span class="text-sm font-semibold text-slate-700">DeptConnect</span>
+                </div>
+                <p class="text-sm text-slate-400">&copy; 2026 DeptConnect. Built for college departments.</p>
+                <div class="flex items-center gap-6">
+                    <a href="#features" class="text-sm text-slate-400 hover:text-indigo-600 transition-colors">Features</a>
+                    <a href="#roles" class="text-sm text-slate-400 hover:text-indigo-600 transition-colors">Roles</a>
+                    <a href="login.html" class="text-sm text-slate-400 hover:text-indigo-600 transition-colors">Login</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/api.js"></script>
+</body>
+</html>
